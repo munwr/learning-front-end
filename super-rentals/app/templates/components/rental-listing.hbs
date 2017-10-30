@@ -1,0 +1,11 @@
+<article class="listing">
+  <a {{action 'toggleImageSize'}} class="image {{if isWide "wide"}}">
+    <img src="{{rental.image}}" alt="{{rental.title}} — {{rental.city}}"/>
+    <small>View Larger</small>
+  </a>
+  <h3>{{rental.title}}</h3>
+  <div class="detail bedrooms">Bedrooms: {{rental.bedrooms}}</div>
+  <div class="detail type">Type: {{rental-property-type rental.propertyType}} - {{rental.propertyType}}</div>
+  <div class="detail location">Location: {{rental.city}}</div>
+  <div class="detail owner">Owner: {{rental.owner}}</div>
+</article>
